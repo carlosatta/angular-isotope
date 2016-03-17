@@ -113,7 +113,7 @@ angular.module("iso.controllers", ["iso.config", "iso.services"])
       return $scope.refreshIso();
     });
     $scope.$on(topics.MSG_REMOVE, function(message, element) {
-      return $scope.removeElement(element);
+      // return $scope.removeElement(element);
     });
     $scope.$on(topics.MSG_OPTIONS, function(message, options) {
       return optionsHandler(message, options);
